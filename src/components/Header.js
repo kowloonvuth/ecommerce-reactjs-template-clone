@@ -7,7 +7,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg navbar-light shadow">
         <div className="container d-flex justify-content-between align-items-center">
             <a className="navbar-brand text-success logo h1 align-self-center" href="index.html">
-            Zay
+            Amazon
             </a>
             <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
@@ -38,17 +38,6 @@ export default function Header() {
                     </div>
                 </div>
                 </div>
-                <a className="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                <i className="fa fa-fw fa-search text-dark mr-2" />
-                </a>
-                <a className="nav-icon position-relative text-decoration-none" href="#">
-                <i className="fa fa-fw fa-cart-arrow-down text-dark mr-1" />
-                <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                </a>
-                <a className="nav-icon position-relative text-decoration-none" href="#">
-                <i className="fa fa-fw fa-user text-dark mr-3" />
-                <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                </a>
             </div>
             </div>
         </div>

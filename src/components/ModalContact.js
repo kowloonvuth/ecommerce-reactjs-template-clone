@@ -3,49 +3,8 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 export default function ModalContact() {
-  const mapRef = useRef(null);
-
-  useEffect(() => {
-    // Initialize the map
-    mapRef.current = L.map('mapid').setView([-23.013104, -43.394365], 13);
-
-    // Add tile layer
-    L.tileLayer(
-      'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=YOUR_MAPBOX_ACCESS_TOKEN',
-      {
-        maxZoom: 18,
-        attribution:
-          'Zay Template | Template Design by <a href="https://templatemo.com/">Templatemo</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-      }
-    ).addTo(mapRef.current);
-
-    // Add a marker
-    L.marker([-23.013104, -43.394365])
-      .addTo(mapRef.current)
-      .bindPopup('<b>Zay</b> eCommerce Template<br />Location.')
-      .openPopup();
-
-    // Disable scroll and touch zoom
-    mapRef.current.scrollWheelZoom.disable();
-    mapRef.current.touchZoom.disable();
-
-    // Cleanup function
-    return () => {
-      mapRef.current.remove();
-    };
-  }, []);
-
   return (
     <>
-      
-      <div id="mapid" style={{ width: '100%', height: '300px' }}></div>
-      
-
         {/* Start Contact */}
         <div className="container py-5">
         <div className="row py-5">
