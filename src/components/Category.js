@@ -58,7 +58,7 @@ export default function Category() {
                 </a>
                 <h5 className="text-center mt-3 mb-3">{category}</h5>
                 <p className="text-center">
-                  <a className="btn btn-success" href="#">
+                  <a className="btn btn-success" href="/shop">
                     Go Shop
                   </a>
                 </p>

@@ -26,7 +26,6 @@ export default function ShopContent() {
 
   const handleAddToCart = (product) => {
     addToCart(product); // Add product to the cart
-    navigate('/checkout'); // Redirect to the checkout page after adding to cart
   };
 
   return (
